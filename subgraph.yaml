@@ -1,0 +1,24 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Asset
+    network: bsc
+    source:
+      address: "0x54787a14A05b5e75d86d315eb40fe45145Fd5cb9"
+      abi: Asset
+      startBlock: 19707553
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Asset
+      abis:
+        - name: Asset
+          file: ./abis/Asset.json
+      eventHandlers:
+        - event: MintTransaction(indexed uint256,address,address,uint256,uint256,uint256)
+          handler: handleMintTransaction
+      file: ./src/handlers/asset.ts
