@@ -1,7 +1,7 @@
 {
-  "bsc": {
-    "Asset": {
-      "address": "0x230185C3B02b897B89cb1e62717AD7772b8319DA"
+  "mainnet": {
+    "AzukiToken": {
+      "address": "0xed5af388653567af2f388e6224dc7c4b3241c544"
     }
   }
 }

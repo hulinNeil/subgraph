@@ -5,7 +5,7 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "auth":"graph auth --product hosted-service f6d72417c6ae4bf4b8e5ca5b99ce07b7",
-    "deploy": "graph deploy --product hosted-service hulinneil/spacey2029",
+    "deploy": "graph deploy --product hosted-service hulinneil/spacey2028",
     "create-local": "graph create --node http://localhost:8020/ hulin/Spacey2025",
     "remove-local": "graph remove --node http://localhost:8020/ hulin/Spacey2025",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 hulin/Spacey2025",

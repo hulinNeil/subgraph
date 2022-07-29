@@ -1,13 +1,3 @@
-# ---------------------------------------------------------
-# Asset --------------------------------------------------
-# ---------------------------------------------------------
-type Asset @entity {
-  id: ID!
-  rarity: BigInt!
-  owner: Bytes! # address
-  tokenId: BigInt!
-  category: BigInt!
-}
 
 # ---------------------------------------------------------
 # Token --------------------------------------------------
@@ -15,9 +5,7 @@ type Asset @entity {
 type Token @entity {
   id: ID! # 使用tokenAddress+tokenId作为key
   tokenId: BigInt!
-  tokenAddress: Bytes!
-  tokenUrl: String!
-  tokenImage: String!
+  tokenAddress: String!
   owner: Bytes! # address
 }
 
@@ -26,6 +14,5 @@ type Token @entity {
 # ---------------------------------------------------------
 type Count @entity {
   id: ID!
-  assetTotal: Int!
   tokenTotal: Int!
 }
