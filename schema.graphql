@@ -6,6 +6,8 @@ type Token @entity {
   id: ID! # 使用tokenAddress+tokenId作为key
   tokenId: BigInt!
   tokenAddress: String!
+  tokenUrl: String!
+  tokenImage: String!
   owner: Bytes! # address
 }
 

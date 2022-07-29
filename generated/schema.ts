@@ -60,6 +60,24 @@ export class Token extends Entity {
     this.set("tokenAddress", Value.fromString(value));
   }
 
+  get tokenUrl(): string {
+    let value = this.get("tokenUrl");
+    return value!.toString();
+  }
+
+  set tokenUrl(value: string) {
+    this.set("tokenUrl", Value.fromString(value));
+  }
+
+  get tokenImage(): string {
+    let value = this.get("tokenImage");
+    return value!.toString();
+  }
+
+  set tokenImage(value: string) {
+    this.set("tokenImage", Value.fromString(value));
+  }
+
   get owner(): Bytes {
     let value = this.get("owner");
     return value!.toBytes();
