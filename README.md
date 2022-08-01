@@ -10,8 +10,7 @@
 ##### AzukiToken
 - Address: 0xed5af388653567af2f388e6224dc7c4b3241c544
 - 需要记录的事件：
-    - Transfer: 有人交易 Token;
-    - Mint: 第一次 mint Token;
+    - Transfer: 有人交易 Token (Mint 时也是会触发 Transfer 事件);
 
 ### 注意事项
 
